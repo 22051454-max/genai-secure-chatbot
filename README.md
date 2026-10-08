@@ -77,3 +77,7 @@ Keep `-w 1` (one worker, many threads): rate-limit buckets and chat history are 
 ## Configuration
 
 See `.env.example`. `JWT_SECRET` must be set in production, otherwise a random key is generated on each start and existing tokens stop working.
+
+## Author and contributors
+
+- **Sandeep Kashyap** ([@sktut](https://github.com/sktut)), author and maintainer
