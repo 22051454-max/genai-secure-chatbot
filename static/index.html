@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SecureChat AI</title><link rel="stylesheet" href="/static/style.css"></head><body>
+<section id="auth" class="center"><div class="card">
+<h1>SecureChat AI</h1><p class="muted">Multi-provider chatbot with a security-hardened backend.</p>
+<input id="u" placeholder="Username" autocomplete="username"><input id="p" type="password" placeholder="Password (8+ chars)" autocomplete="current-password">
+<div class="row"><button id="loginBtn">Log in</button><button id="regBtn" class="ghost">Register</button></div>
+<p id="authErr" class="err"></p></div></section>
+<section id="app" hidden><header><b>SecureChat AI</b><span id="prov" class="muted"></span><span class="grow"></span>
+<button id="eventsBtn" class="ghost">Security log</button><button id="resetBtn" class="ghost">New chat</button><button id="logoutBtn" class="ghost">Log out</button></header>
+<div id="layout"><div id="chat"></div><aside id="side" hidden><h3>Security events</h3><div id="events"></div></aside></div>
+<form id="composer"><div id="chips"></div><div class="row">
+<label class="ghost icon" title="Attach file or image">📎<input id="file" type="file" multiple hidden accept=".txt,.md,.csv,.json,.pdf,.png,.jpg,.jpeg,.gif,.webp"></label>
+<button type="button" id="mic" class="ghost icon" title="Voice input">🎤</button>
+<textarea id="msg" rows="1" placeholder="Ask anything… (try a prompt injection to see the filter)"></textarea>
+<button id="send">Send</button></div></form></section>
+<script src="/static/app.js"></script></body></html>
